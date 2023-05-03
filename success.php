@@ -1,3 +1,10 @@
+<?php
+
+if (!isset($_SESSION['id'])) {
+  header("location:login.php");
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +12,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet"> -->
     <style>
       body {
         text-align: center;
@@ -44,7 +51,7 @@
 </head>
 <body>
         <div>
-            <?php require("navbar.php") ?>
+            <?php require("include/navbar.php") ?>
               </div>
       <div class="cards mt-5">
       <div style="border-radius:200px; width:200px; background: #F8FAF5; margin:0 auto;">
@@ -53,7 +60,7 @@
         <h1>Success</h1> 
         <p>We received your purchase request;<br/> we'll be in touch shortly!</p>
         <a href="dashboard.php">
-          <button type="button" class="btn btn-primary">View Jobs</button>
+          <button type="button" class="btn btn-primary">View My Applied Jobs</button>
     </a>
     
 

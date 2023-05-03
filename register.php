@@ -20,7 +20,7 @@ if (isset($_POST['reg_user'])) {
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="assets/css/style.css">
 <title> Login Screen </title>
 </head>
 <body>
@@ -47,7 +47,7 @@ if (isset($_POST['reg_user'])) {
           <span id="female">Female</span>
 </div>
           <button type="submit" name="reg_user">Register</button>
-          <p class="message"> Registered? <a href="#">Login to an account</a></p>
+          <p class="message"> Registered? <a href="login.php">Login to an account</a></p>
         </form>
       </div>
     </div>
